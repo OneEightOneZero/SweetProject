@@ -1,0 +1,318 @@
+
+@media only screen and (max-width: 480px) {
+    header h1 {
+        width: 50%;
+    }
+    header h1 img {
+        width: 100%;
+        height: auto;
+    }
+    header .cart {
+        width: 12px;
+        height: 12px;
+        padding-left: 20px;
+        padding-bottom: 12px;
+        line-height: 12px;
+        font-size: 10px;
+    }
+    #nav {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #nav li {
+        font-size: 12px;
+        background-size: auto 22px;
+    }
+    #nav li a {
+        padding-top: 30px;
+    }
+    ul.gallery li {
+        font-size: 11px;
+    }
+    ul.gallery li img {
+        width: 100%;
+        height: auto;
+    }
+    .gallery_text {
+        background-size:80% auto;
+    }
+    footer .foot_logo {
+        width: 30px;
+        margin-bottom: -15px;
+    }
+    /*----------------------*/
+    .logo_b {
+        text-align: center;
+        margin-bottom: 20px;
+        height:90px;
+    }
+    .button1 {
+        height: 26px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .button3 {
+        height: 34px;
+        font-size: 14px;
+        letter-spacing: 10px;
+    }
+    .button4 {
+        width:92%;
+        margin-left:4%;
+        margin-right:4%;
+    }
+    table.table2 td {
+        font-size: 12px;
+    }
+    .form4 {
+        line-height: 40px;
+        height: 40px;
+        width: 88%;
+        padding-left: 12%;
+        font-size: 12px;
+    }
+    .form5 {
+        width: 30px;
+    }
+    .form6 {
+        width: 24px;
+        height:14px;
+        line-height:14px;
+    }
+    .form7 {
+        width:40%;
+        float:left;
+        padding-left: 2%;
+    }
+    .add_chose {
+        display: block;
+        margin-bottom: 10px;
+        margin-left: 4%;
+    }
+    .add_chose.add_cart {
+        display: inline-block;
+        margin-bottom: -4px;
+        margin-right: 0px;
+        margin-left: 1%;
+    }
+    .add_chose.add_cart a {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        background: url(img/reduce-add2.png) no-repeat;
+    }
+    .add_chose.add_cart a.reduce {
+        margin-right: 2px;
+    }
+    .add_chose.add_cart a.add {
+        background-position: right 0;
+        margin-left: 2px;
+    }
+    .add_chose a.add:hover {
+        background-position: right bottom;
+    }
+    /*----------------------*/
+    header h2 {
+        font-size: 20px;
+    }
+    header h2 .en {
+        font-size: 12px;
+    }
+    .indent {
+        padding-left:5px;
+        padding-right:5px;
+    }
+    .btn_back {
+        width:12px;
+        top: 8px;
+    }
+    .btn_home {
+        width:24px;
+        top: 8px;
+    }
+    .more {
+        font-size: 18px;
+        background-size:36px;
+        padding-left: 45px;
+    }
+    .more .en {
+        font-size: 12px;
+    }
+    ul.link li {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 14px;
+        background-size: auto 12px;
+    }
+    ul.link li a {
+        background-position: 20px center;
+        padding-left: 57px;
+        background-size: auto 18px;
+    }
+    ul.link li a.l5 {
+        background-size: 24px auto;
+    }
+    
+    .center_text {
+        font-size: 14px;
+    }
+    dl.center_data dt {
+        width: 30%;
+        font-size: 12px;
+        margin-right: 0%;
+    }
+    dl.center_data dd {
+        font-size: 10px;
+        width: 70%;
+    }
+    dl.center_data2 dt {
+        width: 35%;
+        margin-right: 0%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    dl.center_data2 dd {
+        width: 65%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .activity_pic {
+        width: 38%;
+    }
+    .activity_box {
+        width: 60%;
+        font-size: 10px;
+        line-height: 140%;
+    }
+    .activity_title {
+        font-size: 12px;
+    }
+    .activity_date {
+        font-size: 10px;
+    }
+    ul.deal_list li {
+        width: 48%;
+    }
+    
+    .detail_title {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .detail_title2 {
+        font-size: 14px;
+        height: 40px;
+        padding-left: 46%;
+        line-height: 40px;
+    }
+    .detail_text {
+        font-size: 12px;
+        width: 90%;
+    }
+    .detail_price {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .parameter_title {
+        font-size: 14px;
+    }
+    .parameter_title .en {
+        font-size: 12px;
+    }
+    ul.ingredient_list li {
+        width: 50%;
+        font-size: 12px;
+    }
+    dl.ingredient_list2 dt {
+        font-size: 12px;
+        width: 40%;
+    }
+    dl.ingredient_list2 dd {
+        font-size: 12px;
+        width: 60%;
+    }
+    dl.reminder_list dt {
+        width: 12%;
+    }
+    dl.reminder_list dd {
+        width: 88%;
+    }
+    .cart_title {
+        line-height: 20px;
+        background-size:auto 20px;
+        padding-left: 35px;
+        background-position: 8px center;
+    }
+    .cart_title.t2 {
+        background-size:auto 20px;
+    }
+    .cart_title.t3 {
+        background-size:auto 18px;
+    }
+    .cart_title.t4 {
+        background-size:auto 14px;
+        background-position: 8px center;
+    }
+    .cart_title.t5 {
+        background-position: 8px center;
+    }
+    .cart_title.t6 {
+        background-size:auto 12px;
+        background-position: 7px center;
+    }
+    ul.cart_list li {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-right: -5px;
+        margin-left: -5px;
+    }
+    .cart_pic {
+        width: 25%;
+        height: auto;
+    }
+    .cart_pic2 {
+        width: 25px;
+    }
+    .cart_text {
+        font-size: 12px;
+    }
+    .cart_text2 {
+        padding-top: 30px;
+    }
+    .cart_text3 {
+        font-size: 12px;
+    }
+    .icon_delete {
+        width: 18px;
+        height: 18px;
+    }
+    .submit_text {
+        background-size:40px auto;
+        font-size: 16px;
+        height: 40px;
+        padding-top: 8px;
+        padding-left: 45px;
+        width: 180px;
+    }
+    .submit_text2 {
+        font-size: 12px;
+        width: 260px;
+    }
+    .like_title {
+        font-size: 14px;
+    }
+    .like_text {
+        margin-left: 5px;
+    }
+    .like_list li .num {
+        font-size: 18px;
+        color: #6F370D;
+    }
+    }
+    /*@media only screen and (max-width: 330px) {
+    ul.ingredient_list li {
+        width: 50%;
+    }
+    }*/
+    
