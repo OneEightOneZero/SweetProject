@@ -13,7 +13,7 @@ header h1 {
 header .cart {
 	float: right;
 	color: #FFF;
-	background-image: url(img/icon_cart.gif);
+	background-image: url(../../public/icon_cart.gif);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -103,22 +103,22 @@ header .cart {
 	color: #AB977D;
 }
 #nav li.n1 {
-	background-image: url(img/nav1.png);
+	background-image: url(../../public/nav1.png);
 	background-repeat: no-repeat;
 	background-position: center top;
 }
 #nav li.n2 {
-	background-image: url(img/nav2.png);
+	background-image: url(../../public/nav2.png);
 	background-repeat: no-repeat;
 	background-position: center top;
 }
 #nav li.n3 {
-	background-image: url(img/nav3.png);
+	background-image: url(../../public/nav3.png);
 	background-repeat: no-repeat;
 	background-position: center top;
 }
 #nav li.n4 {
-	background-image: url(img/nav4.png);
+	background-image: url(../../public/nav4.png);
 	background-repeat: no-repeat;
 	background-position: center top;
 }
@@ -140,7 +140,7 @@ ul.gallery li img {
 	margin-bottom: 5px;
 }
 .gallery_text {
-	background-image: url(img/gallery_text_bg.png);
+	background-image: url(../../public/gallery_text_bg.png);
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	margin-bottom: 3px;
@@ -383,17 +383,17 @@ footer .foot_logo img {
 	font-size: 14px;
 }
 .form4.name {
-	background-image: url(img/icon_name.png);
+	/* background-image: url(../../public/icon_name.png); */
 	background-repeat: no-repeat;
 	background-position: 2% center;
 }
 .form4.pw {
-	background-image: url(img/icon_pw.png);
+	/* background-image: url(../../public/icon_pw.png); */
 	background-repeat: no-repeat;
 	background-position: 2% center;
 }
 .form4.pw2 {
-	background-image: url(img/icon_pw2.png);
+	/* background-image: url(../../public/icon_pw2.png); */
 	background-repeat: no-repeat;
 	background-position: 2% center;
 }
@@ -417,7 +417,7 @@ footer .foot_logo img {
 	width: 120px;
 	border: 1px solid #EEE;
 	color: #8D6955;
-	background-image: url(img/icon_calendar.png);
+	/* background-image: url(../../public/icon_calendar.png); */
 	background-repeat: no-repeat;
 	background-position: right center;
 	padding-left: 10px;
@@ -472,7 +472,7 @@ table.table1 th {
 	padding: 5px;
 	font-weight: normal;
 	vertical-align: middle;
-	background-image: url(img/table1_th_bg.gif);
+	/* background-image: url(../../public/table1_th_bg.gif); */
 	background-repeat: repeat-x;
 	background-position: left bottom;
 	text-align: right;
