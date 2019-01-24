@@ -8,13 +8,13 @@
 
 
 <script>
-import Xheader from "../components/Xheader.vue";
-import Xarticle from "../components/Xarticle.vue";
+import Xheader from "../components/Xheader.vue"
+import Xarticle from "../components/Xarticle.vue"
 
 export default {
   components: {
     Xheader,
     Xarticle
   }
-};
+}; 
 </script>

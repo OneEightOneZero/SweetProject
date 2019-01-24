@@ -57,8 +57,8 @@
       </div>
     </div>
     <ul id="nav">
-      <li class="n1">
-        <a href="product.html">蛋糕名录</a>
+      <li  class="n1">
+        <a @click="toXdirectory" href="javascript:;">蛋糕名录</a>
       </li>
       <li class="n2">
         <a href="activity.html">最新活动</a>
@@ -137,4 +137,16 @@
   </article>
 </template>
 
+<script>
+export default {
+   methods: {
+    toXdirectory() {
+      // this.$router.push('/app/contact')
+      // 根据命名路由来进行跳转
+      this.$router.push({ name: "xdirectory" });
+    }
+  }
+}
+</script>
 
+ 
