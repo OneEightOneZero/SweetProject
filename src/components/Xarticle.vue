@@ -1,7 +1,7 @@
 <template>
   <article id="content">
     <div id="slider" style="visibility: visible;">
-      <div id="banner" class="swipe-wrap" style="width: 1600px;">
+      <div class="swipe-wrap" style="width: 1600px;">
         <div
           data-index="0"
           style="width: 320px; left: 0px; transition-duration: 300ms; transform: translate(-320px, 0px) translateZ(0px);"
@@ -13,7 +13,7 @@
 
         <div
           data-index="1"
-          style="width: 320px; left: -320px; transition-duration: 300ms; transform: translate(-320px, 0px) translateZ(0px);"
+          style="width: 320px; left: -320px; transition-duration: 300ms; transform: translate(0px, 0px) translateZ(0px);"
         >
           <a href="http://www.sweet30.com/detail-a70.html">
             <img src="http://www.sweet30.com/yyadmin/um/php/upload/20180117/15161675865259.jpg" alt>
@@ -22,7 +22,7 @@
 
         <div
           data-index="2"
-          style="width: 320px; left: -640px; transition-duration: 300ms; transform: translate(0px, 0px) translateZ(0px);"
+          style="width: 320px; left: -640px; transition-duration: 0ms; transform: translate(320px, 0px) translateZ(0px);"
         >
           <a href="http://www.sweet30.com/detail-a72.html">
             <img src="http://www.sweet30.com/yyadmin/um/php/upload/20180117/15161680148926.jpg" alt>
@@ -57,7 +57,7 @@
       </div>
     </div>
     <ul id="nav">
-      <li  class="n1">
+      <li class="n1">
         <a @click="toXdirectory" href="javascript:;">蛋糕名录</a>
       </li>
       <li class="n2">
@@ -72,14 +72,14 @@
       <div class="clear"></div>
     </ul>
     <ul class="gallery">
-      <li>
-        <a href="detail-a89.html">
+      <li @click="toXdetail">
+        <a href="javascript:;">
           <img src="http://www.sweet30.com/yyadmin/um/php/upload/20180612/15287823529313.jpg">
         </a>
         <div class="gallery_text">
-          <a href="detail-a89.html"></a>
+          <a href="javascript:;"></a>
         </div>
-        <a href="detail-a89.html">诞辰</a>
+        <a href="javascript:;">诞辰</a>
       </li>
 
       <li>
@@ -139,14 +139,17 @@
 
 <script>
 export default {
-   methods: {
+  methods: {
     toXdirectory() {
       // this.$router.push('/app/contact')
       // 根据命名路由来进行跳转
       this.$router.push({ name: "xdirectory" });
+    },
+    toXdetail(){
+      this.$router.push({ name: "xdetail" });
     }
   }
-}
+};
 </script>
 
  

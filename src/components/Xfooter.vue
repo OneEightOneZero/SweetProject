@@ -2,7 +2,7 @@
   <footer>
     <div class="foot_text">
       <span class="right">|
-        <a href="#top">返回顶部</a>
+        <a href="#">返回顶部</a>
       </span>
       <span class="font_blue" style="float:left">
         <a href="login.html">登录</a> |

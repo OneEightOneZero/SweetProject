@@ -8,7 +8,7 @@ Vue.use(VueRouter)
 // 首页路由
 import App from '../App.vue'
 // 详情页路由
-// import Detail from '../pages/Detail.vue'
+import Xdetail from '../pages/Xdetail.vue'
 // 登录路由
 // import Sign from '../pages/Sign.vue'
 
@@ -39,6 +39,13 @@ const routes = [
                 }
             },
             {
+                // 就是可以在:id里面接受一个不固定的值
+                // 动态路由匹配
+                path: 'xdetail',
+                name: 'xdetail',
+                component: Xdetail,
+            },
+            {
                 path: 'xdirectory',
                 name: 'xdirectory',
                 component: Xdirectory,
@@ -52,9 +59,9 @@ const routes = [
     // {
     //     // 就是可以在:id里面接受一个不固定的值
     //     // 动态路由匹配
-    //     path: '/detail/:id/:name',
-    //     name: 'detail',
-    //     component: Detail
+    //     path: '/xdetail/:id/:name',
+    //     name: 'xdetail',
+    //     component: Xdetail
     // },
     // {
     //     // 就是可以在:id里面接受一个不固定的值

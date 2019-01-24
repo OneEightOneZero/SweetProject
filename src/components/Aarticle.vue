@@ -1,5 +1,4 @@
 <template>
-  <div>
     <article id="content">
       <div class="title">
         <span>全部蛋糕</span>
@@ -68,11 +67,54 @@
         <div class="clear"></div>
       </ul>
       <div class="more">
-        <a href="products.html">点击可见更多
+        <a @click="getCakes" href="javascript:;">点击可见更多
           <br>
           <span class="en">Click for more</span>
         </a>
       </div>
     </article>
-  </div>
 </template>
+<script>
+export default {
+  data(){
+    return {
+      //存放蛋糕数据
+      cakes:[]
+    }
+  },
+  methods:{
+    //获取数据的方法 （点击更多）
+    async getCakes(){
+      let data = await this.$axios.get("http://10.3.143.100:8080/app/xdirectory/article")
+      // console.log(data)
+      this.cakes = this.cakes.concat(data.data)
+    }
+  },
+  created(){
+    this.getCakes();
+  }
+}
+</script>
+
+
+
+
+
+<style scoped>
+   #content {
+    max-width: 640px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.more {
+    /* background-image: url(data:image/gif;base64,R0lGODlhKgAqANUAAMXFxfT09MnJyfLy8sjIyP7+/vb29v39/d7e3…RIESNHXSKdgvPIYJ07efb0WYhNELIAmufO1dDmd4AQ/NQrFfO7SAETSZYAcAJlgomXhAQBADs=); */
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-size:18px;
+    padding-left: 50px;
+    line-height: 100%;
+    margin-left: 22%;
+    margin-top: 10px;
+    text-align: left;
+}
+</style>
