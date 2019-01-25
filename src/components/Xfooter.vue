@@ -5,8 +5,8 @@
         <a href="#">返回顶部</a>
       </span>
       <span class="font_blue" style="float:left">
-        <a href="login.html">登录</a> |
-        <a href="register.html">注册</a>
+        <a @click="tologin">登录</a>|
+        <a @click="tozhuce">注册</a>
       </span>
       <div class="clear"></div>
     </div>
@@ -19,3 +19,16 @@
     </div>
   </footer>
 </template>
+<script>
+export default {
+  methods:{
+    tologin(){
+      this.$router.push({ name: "login" })
+      // alert("请先登录")?this.$router.push({ name: "login" }):this.$router.push({ name: "darticle" })
+    },
+    tozhuce(){
+       this.$router.push({ name: "zhuce" })
+    }
+  }
+}
+</script>

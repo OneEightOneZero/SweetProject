@@ -10,7 +10,9 @@ import App from '../App.vue'
 // 详情页路由
 import Xdetail from '../pages/Xdetail.vue'
 // 登录路由
-// import Sign from '../pages/Sign.vue'
+import Login from '../pages/Login.vue'
+//注册路由
+import Zhuce from '../pages/Zhuce.vue'
 
 
 // 二层路由
@@ -37,6 +39,20 @@ const routes = [
                 meta: {
                     skill: 'ps'
                 }
+            },
+            {   //登陆页路由
+                // 嵌套路由里面的path要删掉/
+                path: 'login',
+                name: 'login',
+                component: Login,
+                // 路由传参
+            },
+            {   //注册页路由
+                // 嵌套路由里面的path要删掉/
+                path: 'zhuce',
+                name: 'zhuce',
+                component: Zhuce,
+                // 路由传参
             },
             {
                 // 就是可以在:id里面接受一个不固定的值

@@ -27,7 +27,7 @@
         <a href="#" class></a>
       </div>
     </div>
-    <div class="indent">
+    <div style="padding:0px;" class="indent">
       <div class="detail_title">诞辰</div>
       <p class="detail_text"></p>
       <div class="detail_price">
@@ -36,7 +36,8 @@
           <span class="font_18 font_brown" id="haha1">218</span>
         </s>
 
-        <p>会员优惠价：
+        <p>
+          会员优惠价：
           <span class="font_18 font_brown">￥</span>
           <span class="font_18 font_brown" id="haha">188.0</span>
         </p>
@@ -44,7 +45,6 @@
 
       <input type="hidden" id="hahaz" value="188.0">
       <input type="hidden" id="wid" value>
-     
 
       <ul class="select">
         <li class="select-list">
@@ -63,11 +63,12 @@
       </ul>
       <input type="hidden" id="ceshibang89" value="1.5">
       <div class="add_chose">
-        <a class="reduce" onclick="setAmount.reduce('#qty_item_1')" href="javascript:void(0)"></a>
+        <a class="reduce" @click="reduce" href="javascript:void(0)"></a>
         <input
           type="text"
           name="qty_item_1"
-          value="1"
+          v-model="num"
+          
           id="qty_item_1"
           onkeyup="setAmount.modify('#qty_item_1')"
           class="form5 left"
@@ -75,12 +76,11 @@
         <a class="add" onclick="setAmount.add('#qty_item_1')" href="javascript:void(0)"></a>
         <div class="clear"></div>
       </div>
-      <button class="button4" type="button" onclick="goumai(89)">立即购买</button>
-      <button class="button4 peru" type="button" onclick="jiaru(89)">加入购物车</button>
+      <button class="button4" type="button" @click="tologin">立即购买</button>
+      <button class="button4 peru" type="button" @click="tologin">加入购物车</button>
 
       <br>
       <br>
-      
 
       <div style="width:320px;height: 150px;" id="sxcsz">
         <img
@@ -105,7 +105,8 @@
       </div>
 
       <div class="detail_title2">详细参数</div>
-      <div class="parameter_title">优质原材料
+      <div class="parameter_title">
+        优质原材料
         <span class="en">Best Ingredient</span>
       </div>
 
@@ -205,7 +206,8 @@
             >4&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</dt>
             <dd
               style="line-height: 21px; margin: 0px 0px 30px; padding: 0px; float: left; color: rgb(113, 53, 0);"
-            >蛋糕规格及免费配送餐具：
+            >
+              蛋糕规格及免费配送餐具：
               <br style="margin: 0px; padding: 0px;">
               <span style="line-height: 21px;"></span>
               <span style="line-height: 21px;">1.5磅：直径约15*13.5（厘米），适合3-5人食用免费配送5套餐具</span>
@@ -230,43 +232,59 @@
   </article>
 </template>
 <script>
+// 引入jQuery库
+import $ from 'jquery'
+
+let num = $("#qty_item_1").value
+
 export default {
-  
-}
+  methods:{
+    data(){
+      return 1
+    },
+    reduce(){
+      return num--
+    },
+    tologin(){
+      this.$router.push({ name: "login" })
+    //  alert("请先登录")?this.$router.push({ name: "login" }):this.$router.push({ name: "darticle" })
+      }
+    }
+};
 </script>
  <style scoped>
-        .fl-left {
-          margin-left: 10px;
-          float: left;
-          width: 140px;
-          height: 130px;
-        }
-        .details-options li {
-          margin-bottom: 10px;
-          text-align: left;
-        }
-        .details-options li i {
-          display: inline-block;
-          width: 25px;
-          height: 25px;
-          vertical-align: middle;
-          background-image: url(../../public/icon.png);
-          background-size: 310px 120px;
-          background-repeat: no-repeat;
-        }
-        .details-options li.details-options-size i {
-          background-position: -210px -5px;
-        }
-        .details-options li.details-options-unmber i {
-          background-position: -235px -5px;
-        }
-        .details-options li.details-options-laid i {
-          background-position: -260px -5px;
-        }
-        .details-options li.details-options-time i {
-          background-position: -285px -5px;
-        }
- </style>
+.fl-left {
+  margin-left: 10px;
+  float: left;
+  width: 140px;
+  height: 130px;
+}
+.details-options li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.details-options li i {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  background-image: url(../../public/icon.png);
+  background-size: 310px 120px;
+  background-repeat: no-repeat;
+}
+.details-options li.details-options-size i {
+  background-position: -210px -5px;
+}
+.details-options li.details-options-unmber i {
+  background-position: -235px -5px;
+}
+.details-options li.details-options-laid i {
+  background-position: -260px -5px;
+}
+.details-options li.details-options-time i {
+  background-position: -285px -5px;
+}
+</style>
  
 
 

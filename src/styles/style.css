@@ -383,12 +383,12 @@ footer .foot_logo img {
 	font-size: 14px;
 }
 .form4.name {
-	/* background-image: url(../../public/icon_name.png); */
+	background-image: url(../../public/icon_name.png);
 	background-repeat: no-repeat;
 	background-position: 2% center;
 }
 .form4.pw {
-	/* background-image: url(../../public/icon_pw.png); */
+	background-image: url(../../public/icon_pw.png);
 	background-repeat: no-repeat;
 	background-position: 2% center;
 }
@@ -494,9 +494,9 @@ table.table2 td {
 	font-size: 14px;
 }*/
 
-@font-face {
-    font-family: 'trends';
+/* @font-face {
+    font-family: trends;
 
-   }
+   } */
 
 /*----------------*/
